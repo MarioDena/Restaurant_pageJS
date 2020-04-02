@@ -1,0 +1,24 @@
+{
+  "name": "Restaurant_pageJS",
+  "version": "1.0.0",
+  "description": "A restaurant page with tabbed navigation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioDena/Restaurant_pageJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarioDena/Restaurant_pageJS/issues"
+  },
+  "homepage": "https://github.com/MarioDena/Restaurant_pageJS#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
