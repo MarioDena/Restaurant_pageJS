@@ -1,23 +1,25 @@
-$base-color: rgb(184, 53, 53); 
+$base-color: rgb(109, 64, 22); 
 
 body {
-  font-family: "Shrikhand", sans-serif;
+  margin: 0;
+  font-family: sans-serif;
   color: $base-color;
 }
 
-.mainImage {
+.mainImage, .menuImage{
   object-fit: cover;
 }
 
 .content,
 .mainImage,
+.menuImage,
 .nav,
 .tabsContainer, .floating {
   width: 100%;
 }
 
 .content,
-.mainImage {
+.mainImage, .menuImage {
   height: 100vh;
 }
 
@@ -41,14 +43,10 @@ body {
   font-size: 1.5rem;
 }
 
-.floating, .logo {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+  text-align: center;
 }
 
 .nav-link,
@@ -65,10 +63,23 @@ body {
   color: white;
 }
 
+.card{
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.card-img-top{
+  max-height: 350px;
+}
+
 .logo {
 height: 50px;
 position: absolute;
 top: -2px;
 left: 20px;
 font-size: 2rem;
+}
+
+.hide{
+  display: none;
 }

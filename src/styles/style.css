@@ -1,22 +1,24 @@
 body {
-  font-family: "Shrikhand", sans-serif;
-  color: #b83535;
+  margin: 0;
+  font-family: sans-serif;
+  color: #6d4016;
 }
 
-.mainImage {
+.mainImage, .menuImage {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .content,
 .mainImage,
+.menuImage,
 .nav,
 .tabsContainer, .floating {
   width: 100%;
 }
 
 .content,
-.mainImage {
+.mainImage, .menuImage {
   height: 100vh;
 }
 
@@ -40,28 +42,33 @@ body {
   font-size: 1.5rem;
 }
 
-.floating, .logo {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+  text-align: center;
 }
 
 .nav-link,
 .nav-link:hover {
   background-color: white;
-  color: #b83535;
+  color: #6d4016;
 }
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
 .nav-link.active:hover {
-  background-color: #b83535;
-  border-color: #b83535;
+  background-color: #6d4016;
+  border-color: #6d4016;
   color: white;
+}
+
+.card {
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.card-img-top {
+  max-height: 350px;
 }
 
 .logo {
@@ -70,5 +77,9 @@ body {
   top: -2px;
   left: 20px;
   font-size: 2rem;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
