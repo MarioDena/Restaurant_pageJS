@@ -8,7 +8,9 @@ const createWelcome = () => {
   const title = document.createElement('h1');
   const text = document.createElement('p');
   text.innerHTML = assets.welcomeText;
+  text.id = 'page_text';
   title.innerHTML = assets.welcomeMessage;
+  title.id = 'page_title';
 
   column.appendChild(title);
   column.appendChild(text);
@@ -23,6 +25,7 @@ export const welcomeContent = () => {
 
   const rowcontainer = document.createElement('div');
   rowcontainer.classList.add('row', 'fullpage');
+  rowcontainer.id = 'content_home';
   container.appendChild(rowcontainer);
   rowcontainer.appendChild(createWelcome());
 

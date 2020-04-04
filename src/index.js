@@ -1,5 +1,6 @@
 import { welcomeContent } from './home';
 import { actionButton } from './events';
+import { menuContainer } from './menu';
 import * as assets from './variables';
 
 
@@ -52,12 +53,13 @@ const contents = () => {
   element.appendChild(createnav());
 
   const maincontainer = createMainContainer();
-  maincontainer.appendChild(welcomeContent());
+  const content = welcomeContent();
+  maincontainer.appendChild(content);
 
   element.appendChild(maincontainer);
+  content.appendChild(menuContainer());
 
-  element.appendChild(assets.cover('mainImage', true));
-  element.appendChild(assets.cover('menuImage', false));
+  element.appendChild(assets.cover('mainImage'));
 
   return element;
 };
