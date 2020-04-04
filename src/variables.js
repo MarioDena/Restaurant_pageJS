@@ -36,4 +36,3 @@ export const changeCover = (img) => {
   // eslint-disable-next-line no-unused-expressions
   img === 1 ? document.getElementById('mainImage').src = Image1 : document.getElementById('mainImage').src = Image2;
 };
-
