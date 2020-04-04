@@ -2,7 +2,9 @@ import * as assets from './variables';
 
 const setHomeImages = () => {
   document.getElementById('content_menu').classList.add('hide');
+  document.getElementById('content_menu').classList.remove('fadeIn', 'animated');
   document.getElementById('content_home').classList.remove('hide');
+  document.getElementById('content_home').classList.add('fadeIn', 'animated');
 };
 
 // eslint-disable-next-line import/prefer-default-export
@@ -20,7 +22,9 @@ export const actionButton = (id) => {
   }
   if (id === 'Menu') {
     document.getElementById('content_menu').classList.remove('hide');
+    document.getElementById('content_menu').classList.add('fadeIn', 'animated');
     document.getElementById('content_home').classList.add('hide');
+    document.getElementById('content_home').classList.remove('fadeIn', 'animated');
     assets.changeCover(2);
   }
   if (id === 'Reservations') {
